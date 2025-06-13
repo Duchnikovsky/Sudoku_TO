@@ -12,7 +12,7 @@ class SudokuGenerator:
         board = SudokuBoard()
         self._fill_board(board)
         self.solution = board.copy()
-        self._remove_cells(board, count=40)
+        self._remove_cells(board, count=10)
         return board
 
     def get_solution(self):
