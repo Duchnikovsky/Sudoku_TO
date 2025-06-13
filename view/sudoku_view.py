@@ -101,8 +101,3 @@ class GameControllerGUI:
         self.board = self.generator.generate()
         self.solution = self.generator.get_solution()
         self.history = MoveHistory()
-
-if __name__ == "__main__":
-    controller = GameControllerGUI()
-    app = SudokuGUI(controller)
-    app.mainloop()
